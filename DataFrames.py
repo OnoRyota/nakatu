@@ -11,7 +11,7 @@ url = 'http://www.jma.go.jp/jp/amedas_h/today-83051.html'
 fetched_daraframes = pandas.io.html.read_html(url)
 
 #to_json関数で文字列をjsonに変換し保存
-fetched_daraframes[4].to_json('NoAme.json',force_ascii=False)
+fetched_daraframes[4].to_json('NakatuNoAme.json',force_ascii=False)
 
 #プリントしたい場合
 #ret = fetched_daraframes[4].to_json(force_ascii=False)
